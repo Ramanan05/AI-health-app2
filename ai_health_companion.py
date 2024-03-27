@@ -39,8 +39,7 @@ prompts = {
 
 st.title("Your AI Health Companion")
 
-st.set_page_config(page_title="Your AI Health Companion", page_icon=None, layout='wide', initial_sidebar_state='auto', 
-                   background='#f0f0f0')
+
 user_concern = st.text_input("How are you feeling today?")
 
 processed_concern = user_concern.lower().replace(" ", "_")
