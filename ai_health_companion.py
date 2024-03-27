@@ -47,8 +47,9 @@ processed_concern = user_concern.lower().replace(" ", "_")
 
 if processed_concern in prompts:
     # Display random response from the list
-    response = random.choice(prompts[processed_concern])
-    st.write(response)
+    response = prompts[processed_concern]
+    for response in response:
+      st.write(response)
 else:
     st.write("I am still learning about various health concerns. Please consult a doctor for any serious issues.")
 
